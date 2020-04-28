@@ -1,13 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-sentry-Dingtalk
-==============
-An extension for Sentry which integrates with Dingtalk. It will send
-notifications to dingtalk robot.
-:copyright: (c) 2017 by guoyong yi, see AUTHORS for more details.
-:license: BSD, see LICENSE for more details.
-"""
 from setuptools import setup, find_packages
 
 # See http://stackoverflow.com/questions/9352656/python-assertionerror-when-running-nose-tests-with-coverage
@@ -20,12 +12,15 @@ tests_require = [
 
 install_requires = [
     'sentry>=9.1.0',
+    'requests',
+    'pytz',
+    'django',
 ]
 
 
 setup(
     name='sentry-wechat-plugin-renew',
-    version='1.0.5',
+    version='1.0.16',
     keywords='sentry wechat ',
     author='cxt',
     author_email='cxt1122jk@gmail.com',
