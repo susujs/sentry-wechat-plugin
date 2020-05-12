@@ -5,6 +5,7 @@ from setuptools import setup, find_packages
 # See http://stackoverflow.com/questions/9352656/python-assertionerror-when-running-nose-tests-with-coverage
 # for why we need to do this.
 from multiprocessing import util
+import sentry_wechat
 
 
 tests_require = [
@@ -20,7 +21,7 @@ install_requires = [
 
 setup(
     name='sentry-wechat-plugin-renew',
-    version='1.0.16',
+    version=sentry_wechat.VERSION,
     keywords='sentry wechat ',
     author='cxt',
     author_email='cxt1122jk@gmail.com',
